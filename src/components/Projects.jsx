@@ -1,30 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "../assets/assets";
+
 function Projects() {
+  const [theme , setTheme] = useState('light')
+  
   return (
     <>
-      <div>
-        <h1 className="text-4xl py-2 text-center font-bold">Services</h1>
-        <p className="px-2 text-md py-2 leading-8 text-gray-800">
+      <div className="dark:bg-gray-900 dark:text-white">
+        <h1 className="text-4xl py-2 text-center font-bold dark:text-teal-300">Services</h1>
+        <p className="px-6 text-md py-4 leading-8  text-gray-800 dark:text-white">
           I approach each project with a problem-solving mindset, aiming to make
           applications user-centered and efficient. I also value teamwork and
           clear communication, ensuring projects move smoothly from idea to
           completion.{" "}
-          <span className="text-teal-600">Designing and developing </span>{" "}
+          <span className="text-teal-600 dark:text-teal-600">Designing and developing </span>{" "}
           user-friendly, interactive interfaces with React, HTML, CSS, and
           JavaScript. I focus on creating responsive, visually appealing, and
           accessible designs that work seamlessly across devices
         </p>
 
-        <p className="px-2 text-md py-2 leading-8 text-gray-800">
+        <p className="px-6 text-md py-4 leading-8 text-gray-800 dark:text-white">
           Building complete, end-to-end web applications using the stack{" "}
-          <span className="text-teal-600"> (Express, React, Node.js). </span>
+          <span className="text-teal-600 dark:text-teal-600"> (Express, React, Node.js). </span>
           From front-end design to back-end functionality, I create responsive,
           high-performance applications tailored to client needs
         </p>
-      </div>
       <div className="lg:flex gap-12 ">
-        <div className="ml-6 text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+        <div className="ml-6 text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white dark:text-black">
           <img className="mx-auto" src={assets.code} width={100} height={100} />
           <h3 className="text-lg font-medium pt-8 pb-2 ">
             Code your dream project
@@ -34,7 +36,7 @@ function Projects() {
             reality.
           </p>
         </div>
-        <div className="mr-6 text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+        <div className="mr-6 text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:shadow-lg dark:bg-white dark:text-black">
           <img
             className="mx-auto"
             src={assets.consulting}
@@ -46,6 +48,7 @@ function Projects() {
             Are you interested in feedback for your current project? I can give
             you tips and tricks to level it up.
           </p>
+      </div>
         </div>
       </div>
     </>

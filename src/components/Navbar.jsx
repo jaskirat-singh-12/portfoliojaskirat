@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { assets } from "../assets/assets";
+import themeContext from './Theme'  ;
 
 function Navbar() {
   const onButtonClick = () => {
@@ -15,22 +16,23 @@ function Navbar() {
     });
   };
 
-  const [themeMode, setThemeMode] = useState("light");
-
+  const t = useContext(themeContext)
   const switchToDarkTheme = () => {
-    if (themeMode !== "dark") {
-      setThemeMode("dark");
+    if (t.theme == 'dark') {
+      t.setTheme('light') 
+    } else {
+      t.setTheme('dark')
     }
   };
 
   useEffect(() => {
     document.querySelector("html").classList.remove("dark", "light");
-    document.querySelector("html").classList.add(themeMode);
-  }, [themeMode]);
+    document.querySelector("html").classList.add(t.theme);
+  }, [t.theme]);
 
   return (
     <div>
-      <nav className="py-10 mb-12 flex justify-between dark:bg-gray-900">
+      <nav className="py-10 flex justify-between dark:bg-gray-900">
         <h1 className="text-2xl ml-5 font-bold dark:text-white">Jaskirat</h1>
         <ul className="flex items-center">
           <li>
