@@ -34,7 +34,7 @@ function Navbar() {
     <div>
       <nav className="py-10 flex justify-between dark:bg-gray-900">
         <h1 className="text-2xl ml-5 font-bold dark:text-white">Jaskirat</h1>
-        <ul className="flex items-center">
+        <ul className="flex items-center dark:text-white">
           <li>
             <BsFillMoonStarsFill
               onClick={switchToDarkTheme}
