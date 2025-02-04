@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { assets } from "../assets/assets";
-import themeContext from './Theme'  ;
+import themeContext from './Theme';
 
 function Navbar() {
   const onButtonClick = () => {

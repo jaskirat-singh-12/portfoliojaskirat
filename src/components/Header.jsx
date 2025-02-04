@@ -3,7 +3,6 @@ import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { assets } from "../assets/assets";
 import { useState } from 'react';
-import themeContext from '../components/Theme'
 const Header = () => {
   const [theme , setTheme] = useState('light')
   return (
