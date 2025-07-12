@@ -31,8 +31,9 @@ function Navbar() {
   }, [t.theme]);
 
   return (
-    <div>
-      <nav className="py-10 flex justify-between dark:bg-gray-900">
+
+    <div className="top-0 z-90 left-0 right-0 p-3 items-center justify-center fixed backdrop-blur-sm ">
+      <nav className="py-10 flex justify-between ">
         <h1 className="text-2xl ml-5 font-bold dark:text-white">Jaskirat</h1>
         <ul className="flex items-center dark:text-white">
           <li>

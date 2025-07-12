@@ -4,19 +4,19 @@ import { BsGithub } from "react-icons/bs";
 import { assets } from "../assets/assets";
 import { useState } from 'react';
 const Header = () => {
-  const [theme , setTheme] = useState('light')
+  const [theme , setTheme] = useState('dark')
   return (
       
-    <div className= "dark:bg-gray-900" >
+    <div className= " dark:bg-gray-900 py-20" >
 
       <div className="text-center p-10 dark:bg-gray-900">
-        <h1 className="text-teal-600 text-5xl font-medium">
+        <h1 className="animate-pulse text-teal-600 text-5xl font-medium">
           Hey!, I’m Jaskirat Singh Bhatia,
         </h1>
         <h3 className="text-2xl py-2 dark:text-white">
           a web developer specializing in the Frontend.
         </h3>
-        <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
+        <p className="text-lg py-5 leading-8 text-gray-800 dark:text-white">
           {" "}
           I’m passionate about creating seamless digital experiences and
           intuitive, responsive websites.

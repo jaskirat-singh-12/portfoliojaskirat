@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
 
+import { motion } from 'framer-motion';
+
 function Projects() {
-  const [theme , setTheme] = useState('light')
+  const [theme , setTheme] = useState('dark')
   
   return (
     <>
       <div className="dark:bg-gray-900 dark:text-white">
         <h1 className="text-4xl py-2 text-center font-bold dark:text-teal-300">Services</h1>
-        <p className="px-6 text-md py-4 leading-8  text-gray-800 dark:text-white">
+        <p className=" px-6 text-md py-4 leading-8  text-gray-800 dark:text-white">
           I approach each project with a problem-solving mindset, aiming to make
           applications user-centered and efficient. I also value teamwork and
           clear communication, ensuring projects move smoothly from idea to

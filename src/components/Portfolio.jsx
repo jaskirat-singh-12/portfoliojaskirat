@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
 function Portfolio() {
-  const [theme , setTheme] = useState('light')
+  const [theme , setTheme] = useState('dark')
   return (
 
     <div className='dark:bg-gray-900 dark:text-white'>
-      <h1 className='text-4xl py-2 text-center font-bold dark:text-teal-300'>Projects</h1>
+      <h1 className='text-4xl py-2 text-center font-bold dark:text-teal-300 md:p-20'>Projects</h1>
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
             <a href="https://671a004f14b9a7908ee6f253--glittering-cucurucho-7fc905.netlify.app/" target="https://671a004f14b9a7908ee6f253--glittering-cucurucho-7fc905.netlify.app/" rel="noopener noreferrer">
